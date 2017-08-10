@@ -1,0 +1,67 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	background: url(../images/clouds_large_med.jpg) no-repeat;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5em;
+}
+
+#search {
+	border: 0;
+	border-radius: 3px;
+	width: 20vw;
+	height: 5vh;
+	font-size: 1.2em;
+	display: block;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+#search:focus {
+	border: 2px solid #77dd77;
+}
+
+#submit {
+	border: none;
+	border-radius: 3px;
+	width: 10vw;
+	height: 5vh;
+	font-size: 1.2em;
+	display: block;
+	margin: 0em auto 1em auto;
+	background-color: steelblue;
+	cursor: pointer;
+	box-shadow: 0px 1px gray;
+}
+
+#submit:hover {
+	background-color: #3f76a3;
+}
+
+#submit:active {
+	transform: scale(.99);
+}
+
+#submit:focus {
+	outline: none;
+}
+
+#weather {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media only screen and (max-width: 755px) {
+	#submit {
+		font-size: 1em;
+	}
+}
